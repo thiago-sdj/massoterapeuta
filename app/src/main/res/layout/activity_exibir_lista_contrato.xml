@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5CFC8">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#94B9AF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTRATOS"
+            android:textColor="#463F3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/botao_voltar_listacontrato"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_voltar" />
+
+        <ImageView
+            android:id="@+id/adicionar_contrato"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_adicionar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_ativos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="270dp"
+        android:textColor="#463F3A"
+        android:textStyle="bold"
+        app:trackTint="#DAE7E3"
+        app:thumbTint="#94B9AF"
+        android:text="ATIVOS"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListaContrato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu"
+        app:labelVisibilityMode="labeled"
+        android:background="#94B9AF"
+        app:itemIconTint="#463F3A"
+        app:itemTextColor="#463F3A"
+        app:itemActiveIndicatorStyle="@color/teal_200"/>
+
+</LinearLayout>

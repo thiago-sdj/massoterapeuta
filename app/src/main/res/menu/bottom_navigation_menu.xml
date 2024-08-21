@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/menu_item1"
+    android:icon="@drawable/clientes"
+    android:title="Clientes"/>
+
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="@drawable/servicos"
+        android:title="Serviços" />
+
+    <item
+        android:id="@+id/menu_item3"
+        android:icon="@drawable/horarios"
+        android:title="Sessões" />
+
+    <item
+        android:id="@+id/menu_item4"
+        android:icon="@drawable/contrato"
+        android:title="Contratos" />
+
+    <item
+        android:id="@+id/menu_item5"
+        android:icon="@drawable/relatorios"
+        android:title="Relatórios" />
+
+</menu>

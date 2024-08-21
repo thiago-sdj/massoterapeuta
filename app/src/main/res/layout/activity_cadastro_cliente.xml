@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadastrarClienteActivity"
+    android:background="#B5CFC8">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#94B9AF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRAR CLIENTE"
+            android:textColor="#463F3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/ic_voltar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_voltar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Nome"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECIONE O SEXO"
+                android:textAlignment="center"
+                android:textColor="#463F3A"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/cadastro_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_weight="0.5"
+                android:spinnerMode="dialog"
+                android:background="@drawable/border"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Telefone"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_ocupacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Ocupação"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/layout_cadastro_logradouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_logradouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Logradouro"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_complemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Complemento"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Bairro"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_cep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="CEP"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Número"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="E-mail"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_queixas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Queixas"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_historico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Historico"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_medicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Medicamentos"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_sono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Sono"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_alimentacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Alimentação"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_digestao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Digestão"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_excrecao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Excreção"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_doresFisicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Dores Físicas"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_doresEmocionais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Dores emocionais"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_menstruação"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Menstruação"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_parto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Parto"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_cirurgias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Cirurgias"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_mobilidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Mobilidade"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_vicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Vícios"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_hormonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Hormonal"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_dataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Data de nascimento"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_observação"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Observação"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/form_botaoSalvarCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:text="SALVAR"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:backgroundTint="#84AC6B"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

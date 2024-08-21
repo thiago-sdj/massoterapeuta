@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B5CFC8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Nome"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Nome"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Telefone"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_nome"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Telefone"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_nome"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Logradouro"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_telefone"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_logradouro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Logradouro"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_telefone"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Bairro"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_logradouro"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Bairro"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_logradouro"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Número casa"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_bairro"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número casa"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_bairro"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Complemento"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_numero"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_complemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Complemento"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_numero"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="CEP"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_complemento"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="CEP"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_complemento"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Sexo"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_cep"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Sexo"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_cep"
+            android:gravity="center"/>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Data de Nascimento"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_sexo"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_dataNascimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Data de Nascimento"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_sexo"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Ocupação"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_dataNascimento"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_ocupacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Ocupação"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_dataNascimento"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="E-MAIL"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_ocupacao"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="E-MAIL"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_ocupacao"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Queixas"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_email"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_queixas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Queixas"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_email"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Histórico"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_queixas"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_historico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Histórico"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_queixas"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Medicamentos"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_historico"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_medicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Medicamentos"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_historico"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Sono"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_medicamentos"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_sono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Sono"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_medicamentos"
+            android:gravity="center"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Alimentação"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_sono"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_alimentacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Alimentação"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_sono"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Digestão"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_alimentacao"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_digestao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Digestão"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_alimentacao"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Excrecao"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_digestao"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_excrecao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Excrecao"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_digestao"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Dores físicas"
+        android:textColor="#463F3A"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_excrecao"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_doresFisicas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Dores físicas"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_excrecao"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Dores Emocionais"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_doresFisicas"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_doresEmocionais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Dores Emocionais"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_doresFisicas"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Menstruação"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_doresEmocionais"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_menstruacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Menstruação"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_doresEmocionais"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Parto"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_menstruacao"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_parto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Parto"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_menstruacao"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Cirurgias"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_parto"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_cirurgias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Cirurgias"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_parto"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Mobilidade"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_cirurgias"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_mobilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Mobilidade"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_cirurgias"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Vícios"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_mobilidade"
+        android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_vicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Vícios"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_mobilidade"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Hormonal"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_vicios"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_hormonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Hormonal"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_vicios"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Observações"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_hormonal"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_cliente_selecionado_observacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Observações"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/itens_cliente_selecionado_hormonal"
+            android:gravity="center"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#C2C2C2"
+        app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_nome" />
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

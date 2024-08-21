@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5CFC8">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#94B9AF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SESSÕES"
+            android:textColor="#463F3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botaoBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_backup"
+            android:backgroundTint="#94B9AF"
+            android:layout_gravity="right"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/opção_todas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            style="@style/RadioButton"
+            android:text="TODAS"/>
+        <RadioButton android:id="@+id/opção_hoje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="HOJE"/>
+        <RadioButton android:id="@+id/opção_amanha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            style="@style/RadioButton"
+            android:text="AMANHÃ"/>
+    </RadioGroup>
+
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_marcados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MARCADOS"
+            android:layout_marginLeft="250dp"
+            android:textColor="#463F3A"
+            android:textStyle="bold"
+            app:trackTint="#DAE7E3"
+            app:thumbTint="#94B9AF"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:backgroundTint="@color/black"
+        android:background="#C2C2C2"
+        />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListaSessao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#94B9AF"
+        app:itemIconTint="#463F3A"
+        app:itemTextColor="#463F3A"
+        app:itemActiveIndicatorStyle="@color/teal_200"/>
+
+</LinearLayout>

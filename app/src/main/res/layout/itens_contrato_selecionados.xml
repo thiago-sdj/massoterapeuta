@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B5CFC8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número do Contrato"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_idcontrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="300dp"
+            android:text="Número do Contrato"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número do Cliente"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_idcliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número do Cliente"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>]
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Nome do Cliente"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_nomecliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Nome do Cliente"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número do Servico"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_idservico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número do Servico"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Descrição do Serviço"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_descricaoservico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Descrição do Serviço"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Data Firmado"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_datafirmado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Data Firmado"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Forma de Pagamento"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_formapagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Forma de Pagamento"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Vezes na Semana"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_vezessemana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Vezes na Semana"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número de Sessões"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/itens_contrato_selecionado_numerosessoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="Número de Sessões"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

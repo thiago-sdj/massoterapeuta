@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5CFC8">
+
+    <LinearLayout
+        android:id="@+id/label_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center" />
+
+    <TextView
+        android:id="@+id/itens_servico_selecionado_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Descrição"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:backgroundTint="@color/black"
+            android:background="#C2C2C2"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_idservico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor Unitário"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center" />
+
+        <TextView
+        android:id="@+id/itens_servico_selecionado_valorunitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Valor Unitário"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:backgroundTint="@color/black"
+            android:background="#C2C2C2"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_idservico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor Pacote"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center" />
+
+    <TextView
+        android:id="@+id/itens_servico_selecionado_valorpacote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Valor Pacote"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:backgroundTint="@color/black"
+            android:background="#C2C2C2"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_idservico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center" />
+    <TextView
+        android:id="@+id/itens_servico_selecionado_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Peso"
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:backgroundTint="@color/black"
+            android:background="#C2C2C2"
+            app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_idservico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tempo em minutos"
+            android:layout_margin="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#463F3A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center" />
+    <TextView
+        android:id="@+id/itens_servico_selecionado_tempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:text="Tempo "
+        android:textColor="#463F3A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="0.5dp"
+        android:background="#C2C2C2"
+        app:layout_constraintTop_toBottomOf="@+id/itens_cliente_selecionado_idservico" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

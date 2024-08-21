@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadastrarContratoActivity"
+    android:background="#B5CFC8">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#94B9AF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRAR CONTRATO"
+            android:textColor="#463F3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/botao_voltar_cadastrarcontrato"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_voltar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <Spinner
+                    android:id="@+id/cadastro_nome_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:hint="Nome Cliente"
+                    android:background="@drawable/border" />
+
+
+             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_codigo_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadastro_codigo_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="15dp"
+                    android:hint="Código Cliente"
+                    android:textColor="#463F3A"
+                    android:textColorHint="#463F3A" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/cadastro_nome_servico"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:hint="Nome Serviço"
+                    android:background="@drawable/border"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_codigo_servico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cadastro_codigo_servico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Código Serviço"
+                    android:textColor="#463F3A"
+                    android:textColorHint="#463F3A" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_vezes_semana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_vezes_semana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Quantidade de vezes na semana"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_numero_sessoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_numero_sessoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Número de sessões"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_forma_pagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Forma pagamento"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_valor_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadastro_valor_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Valor pago"
+                android:textColor="#463F3A"
+                android:textColorHint="#463F3A"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dias das sessões"
+                android:textColor="#463F3A"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cadastro_dia_semana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/black"
+                android:textColorHint="#463F3A"
+                app:errorTextColor="@color/vermelho"
+                app:boxStrokeErrorColor="@color/vermelho">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox android:id="@+id/checkbox_segunda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Segunda"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+                <CheckBox android:id="@+id/checkbox_terca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terça"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+                <CheckBox android:id="@+id/checkbox_quarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quarta"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox android:id="@+id/checkbox_quinta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quinta"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+                <CheckBox android:id="@+id/checkbox_sexta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexta"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+                <CheckBox android:id="@+id/checkbox_sabado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado"
+                    android:width="125dp"
+                    android:textColor="#463F3A"
+                    android:buttonTint="#463F3A"/>
+            </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hora das Sessões"
+                    android:textColor="#463F3A"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+                <TimePicker
+                    android:id="@+id/cadastro_horario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:theme="@style/TimePickerTheme"/>
+
+
+            </LinearLayout>
+
+           <com.google.android.material.button.MaterialButton
+            android:id="@+id/form_buttonSaveContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:text="SALVAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:backgroundTint="#84AC6B"
+            android:textColor="#000000"
+            android:layout_marginBottom="45dp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
